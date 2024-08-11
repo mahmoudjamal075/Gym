@@ -1,0 +1,5 @@
+- colors:first color--> black (pure) ,second color--> white (pure) , text(headings and paragraphs): --> white(pure)
+
+
+- fonts: one font for all texts(with diffrent sizes) --> "Libre Franklin", sans-serif . 
+

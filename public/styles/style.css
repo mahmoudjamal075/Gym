@@ -1,0 +1,102 @@
+* {
+  padding: 0px;
+  margin: 0px;
+
+  box-sizing: border-box;
+}
+html {
+  /* gloabal variables: increase reusablility */
+  --bg-color: black;
+  --small-txt-color: white;
+  --head-lines: rgb(118, 225, 12);
+
+  /*Fonts*/
+  --text-font: "Ysabeau Infant", system-ui;
+  --text-opt-sizing: auto;
+  --text-font-style: normal;
+
+  --small-text-font-weight: 400;
+  --large-text-font-weight: 800;
+}
+
+/* start styling bigger containers ... til i reach element itself*/
+
+nav {
+  width: 100vw;
+  height: 10vh;
+
+  font-family: var(--text-font);
+  font-style: var(--text-font-style);
+  font-weight: var(--small-text-font-weight);
+
+  color: var(--small-txt-color);
+  background-color: black;
+
+  padding: 1rem 2rem;
+
+  /* display system */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 2px solid white;
+}
+nav * {
+  color: var(--small-txt-color);
+}
+nav .logo {
+  width: 40px;
+  height: 100%;
+
+  /*   filter: drop-shadow(offsetX offsetY blurRadius color); */
+  filter: drop-shadow(-10px -5px 10px white);
+  border: 2px solid white;
+}
+nav ul {
+  width: 70vw;
+  max-width: 50%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  /* debugging */
+  border: 2px solid white;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav #signIn {
+  width: 5vw;
+  height: 5vh;
+
+  min-width: fit-content;
+
+  vertical-align: middle;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 5px;
+
+  background-color: var(--bg-color);
+  border: 2px solid var(--small-txt-color);
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: all 0.5s;
+  letter-spacing: 0.5px;
+  /* debugging */
+  /* border: 2px solid white; */
+}
+nav #signIn:hover {
+  border-color: var(--bg-color);
+  background-color: white;
+  color: black;
+}
+
+/* make nav responsive */
+
+/* Border sizing: box sizing , is very important becouse The width and height properties include padding and borde */
